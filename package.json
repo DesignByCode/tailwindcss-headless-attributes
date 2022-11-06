@@ -1,0 +1,30 @@
+{
+  "name": "tailwindcss-headless-attributes",
+  "version": "1.0.0",
+  "description": "Style html elements with TailwindCSS using data and aria attributes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesignByCode/tailwindcss-headless-attributes.git"
+  },
+  "keywords": [
+    "TailwindCSS",
+    "vanilla-headless",
+    "data",
+    "attributes",
+    "aria",
+    "attributes"
+  ],
+  "author": "Claude Myburgh <claude@designbycode.co.za>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DesignByCode/tailwindcss-headless-attributes/issues"
+  },
+  "homepage": "https://github.com/DesignByCode/tailwindcss-headless-attributes#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
+}
