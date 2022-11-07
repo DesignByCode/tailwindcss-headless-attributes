@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-headless-attributes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Style html elements with TailwindCSS using data and aria attributes",
   "main": "index.js",
   "scripts": {
