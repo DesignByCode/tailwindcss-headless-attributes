@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin")
 
 module.exports = plugin(({addVariant, theme}) => {
   /**
@@ -51,8 +51,9 @@ module.exports = plugin(({addVariant, theme}) => {
    * @type {{state: string[], switch: string[]}}
    */
   const headlessDataSets = {
-    state: ['open', 'close'],
-    switch: ['on', 'off'],
+    state: ["open", "close"],
+    switch: ["on", "off"],
+    theme: ["dark", "light"],
   }
 
   /**
@@ -60,27 +61,26 @@ module.exports = plugin(({addVariant, theme}) => {
    * @type {{haspopup: string[], relevant: string[], current: string[], orientation: string[], autocomplete: string[], pressed: string[], invalid: string[], sort: string[], activedescendant: string[], dropeffect: string[], live: string[]}}
    */
   const ariaAttributesList = {
-    activedescendant: ["application", "combobox", "composite","group", "textbox"],
-    autocomplete: [ "none", "both", "inline", "list" ],
-    current: [ "page", "step", "location", "date", "time" ],
-    dropeffect: [ "copy", "execute", "link", "move", "none", "popup" ],
-    haspopup: [ "menu", "listbox", "tree", "grid", "dialog"],
+    activedescendant: ["application", "combobox", "composite", "group", "textbox"],
+    autocomplete: ["none", "both", "inline", "list"],
+    current: ["page", "step", "location", "date", "time"],
+    dropeffect: ["copy", "execute", "link", "move", "none", "popup"],
+    haspopup: ["menu", "listbox", "tree", "grid", "dialog"],
     invalid: ["grammar", "spelling"],
     live: ["assertive", "off", "polite"],
-    orientation: [ "horizontal", "undefined", "vertical" ],
+    orientation: ["horizontal", "undefined", "vertical"],
     pressed: ["mixed"],
-    relevant: [ "additions", "all", "removals", "text" ],
-    sort: [ "ascending", "descending", "none", "other" ],
+    relevant: ["additions", "all", "removals", "text"],
+    sort: ["ascending", "descending", "none", "other"],
   }
 
-  booleanAttributes.forEach(attr => variantGenerator(attr, "true", "aria"))
+  booleanAttributes.forEach((attr) => variantGenerator(attr, "true", "aria"))
 
   for (const [attr, values] of Object.entries(headlessDataSets)) {
-    values.forEach(value => variantGenerator(attr , value, 'data', false))
+    values.forEach((value) => variantGenerator(attr, value, "data", false))
   }
 
   for (const [attr, values] of Object.entries(ariaAttributesList)) {
-    values.forEach(value => variantGenerator(attr , value, 'aria', false))
+    values.forEach((value) => variantGenerator(attr, value, "aria", false))
   }
-
 })
