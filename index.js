@@ -76,11 +76,13 @@ module.exports = plugin(({addVariant, theme}) => {
 
   booleanAttributes.forEach((attr) => variantGenerator(attr, "true", "aria"))
 
-  for (const [attr, values] of Object.entries(headlessDataSets)) {
+  Object.entries(headlessDataSets).map(([attr, values]) => {
     values.forEach((value) => variantGenerator(attr, value, "data", false))
-  }
+  })
 
-  for (const [attr, values] of Object.entries(ariaAttributesList)) {
+  Object.entries(ariaAttributesList).map(([attr, values]) => {
     values.forEach((value) => variantGenerator(attr, value, "aria", false))
-  }
+  })
+
+
 })
