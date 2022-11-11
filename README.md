@@ -1,11 +1,11 @@
-# TailwindCSS Headless Attributes
+# TailwindCSS Attributes
 A plugin that provides utilities for adding styles with aria attributes. Create to play nice with [vanilla-headless](https://www.npmjs.com/package/vanilla-headless)
 ## Installation
 
 
 Install the plugin from npm:
 ```bash
-npm install tailwindcss-headless-attributes
+npm install tailwindcss-attributes
 ```
 Then add the plugin to your tailwind.config.js file:
 ```javascript
@@ -15,7 +15,7 @@ module.exports = {
     
   },
   plugins: [
-    require("tailwindcss-headless-attributes"),
+    require("tailwindcss-attributes"),
   ],
 }
 ```
