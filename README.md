@@ -3,6 +3,16 @@ A plugin that provides utilities for adding styles with aria attributes. Create 
 ## Installation
 
 
+![npm (tag)](https://img.shields.io/npm/v/tailwindcss-attributes/latest?color=brightgreen)
+![npm](https://img.shields.io/npm/dt/tailwindcss-attributes)
+![npm type definitions](https://img.shields.io/npm/types/tailwindcss-attributes)
+![NPM](https://img.shields.io/npm/l/tailwindcss-attributes)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/tailwindcss-attributes)
+[![GitHub stars](https://img.shields.io/github/stars/DesignByCode/tailwindcss-attributes?style=social)](https://github.com/DesignByCode/tailwindcss-attributes/stargazers)
+
+[![NPM](https://nodei.co/npm/tailwindcss-attributes.png)](https://nodei.co/npm/tailwindcss-attributes/)
+
+
 Install the plugin from npm:
 ```bash
 npm install tailwindcss-attributes
