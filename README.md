@@ -69,21 +69,84 @@ These ``aria-*`` attribute all translate to a value of ``true``
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 ```
-- aria-atomic
-- aria-busy
-- aria-checked
-- aria-current
-- aria-disabled
-- aria-expanded
-- aria-grabbed
-- aria-haspopup
-- aria-hidden
-- aria-invalid
-- aria-live
-- aria-modal
-- aria-multiline
-- aria-multiselectable
-- aria-pressed
-- aria-readonly
-- aria-required
-- aria-selected
+
+### Aria attributes variants
+
+The following attribute all evaluate to ```true```
+- aria-atomic:
+- aria-busy: 
+- aria-checked: 
+- aria-current: 
+- aria-disabled: 
+- aria-expanded: 
+- aria-grabbed: 
+- aria-haspopup: 
+- aria-hidden: 
+- aria-invalid: 
+- aria-live: 
+- aria-modal: 
+- aria-multiline: 
+- aria-multiselectable: 
+- aria-pressed: 
+- aria-readonly: 
+- aria-required: 
+- aria-selected: 
+
+### Aria attributes variants with modifiers
+Use modifier to access attribute value
+```html
+<div class="aria-activedescendant-application:text-red-500"></div>    
+```
+- aria-activedescendant-{modifier}
+    - application
+    - combobox
+    - composite
+    - group
+    - textbox
+- aria-autocomplete-{modifier}
+    - none
+    - both
+    - inline
+    - list
+- aria-current-{modifier}
+    - page
+    - step
+    - location
+    - date
+    - time
+- aria-dropeffect-{modifier}
+    - copy
+    - execute
+    - link
+    - move
+    - none
+    - popup
+- aria-haspopup-{modifier}
+    - menu
+    - listbox
+    - tree
+    - grid
+    - dialog
+- aria-invalid-{modifier}
+    - grammar
+    - spelling
+- aria-live-{modifier}
+    - assertive
+    - off
+    - polite
+- aria-orientation-{modifier}
+    - horizontal
+    - undefined
+    - vertical
+- aria-pressed-{modifier}
+    - mixed
+- aria-relevant-{modifier}
+    - additions
+    - all
+    - removals
+    - text
+- aria-sort-{modifier}
+    - ascending
+    - descending
+    - none
+    - other
