@@ -1,9 +1,0 @@
-
-> tailwindcss-headless-attributes@1.1.0 build C:\www\npm-package-dev\headless\packages\tailwindcss-attributes
-> rollup -c
-
-(node:17312) ExperimentalWarning: Importing JSON modules is an experimental feature. This feature could change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)
-[36m
-[1m./index.js[22m → [1mdist/index.cjs.js, dist/index.umd.js[22m...[39m
-[32mcreated [1mdist/index.cjs.js, dist/index.umd.js[22m in [1m635ms[22m[39m
