@@ -1,7 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.2...HEAD)
+## [Unreleased](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.3...HEAD)
 - Unreleased
+
+## [v1.1.3](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.2...v1.1.3) - 2022-11-19
+### Added
+- Changes file extension from js to cjs
 
 ## [v1.1.2](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.1...v1.1.2) - 2022-11-12
 ### Added
