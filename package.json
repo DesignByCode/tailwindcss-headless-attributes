@@ -2,18 +2,16 @@
   "name": "tailwindcss-attributes",
   "version": "1.1.2",
   "description": "Style html elements with TailwindCSS using data and aria attributes",
-  "main": "dist/index.js",
-  "browser": "dist/index.esm.js",
-  "type": "module",
-  "scripts": {
-    "clean": "rd /s /q esm dist lib build .cache>nul 2>&1|echo.>nul",
-    "dev": "rollup -c -w",
-    "build": "rollup -c"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DesignByCode/tailwindcss-headless-attributes.git"
   },
+  "bugs": {
+    "url": "https://github.com/DesignByCode/tailwindcss-headless-attributes/issues"
+  },
+  "homepage": "https://github.com/DesignByCode/tailwindcss-headless-attributes#readme",
+  "author": "Claude Myburgh <claude@designbycode.co.za>",
   "keywords": [
     "TailwindCSS",
     "vanilla-headless",
@@ -22,19 +20,28 @@
     "aria",
     "attributes"
   ],
+  "type": "module",
+  "main": "dist/index.cjs",
+  "browser": "dist/index.esm.js",
   "publishConfig": {
     "access": "public"
   },
-  "author": "Claude Myburgh <claude@designbycode.co.za>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DesignByCode/tailwindcss-headless-attributes/issues"
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rd /s /q esm dist lib build .cache>nul 2>&1|echo.>nul",
+    "dev": "rollup -c -w"
   },
-  "homepage": "https://github.com/DesignByCode/tailwindcss-headless-attributes#readme",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.esm.js"
+    }
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.1.0",
+    "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "rollup": "^3.3.0",
     "tailwindcss": "^3.2.2"
