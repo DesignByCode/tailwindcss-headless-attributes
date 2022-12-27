@@ -1,8 +1,13 @@
 # Release Notes
 
-## [Unreleased](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.4...HEAD)
+## [Unreleased](https://github.com/designbycode/tailwindcss-attributes/compare/v1.2.0...HEAD)
 
 - Unreleased
+
+## [v1.1.4](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.4...v1.2.0) - 2022-11-27
+
+### Added
+- remove rollup builds
 
 ## [v1.1.4](https://github.com/designbycode/tailwindcss-attributes/compare/v1.1.3...v1.1.4) - 2022-11-27
 
