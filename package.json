@@ -20,7 +20,7 @@
     "aria",
     "attributes"
   ],
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
