@@ -1,6 +1,6 @@
 const plugin = require("tailwindcss/plugin")
 
-module.exports = plugin(({ addVariant, theme }) => {
+const tailwindcssAttributes = plugin(({ addVariant, theme }) => {
   /**
    * https://tailwindcss.com/docs/plugins#parent-and-sibling-states
    * @param name
@@ -84,3 +84,5 @@ module.exports = plugin(({ addVariant, theme }) => {
     values.forEach((value) => variantGenerator(attr, value, "aria", false))
   })
 })
+
+module.exports = tailwindcssAttributes
